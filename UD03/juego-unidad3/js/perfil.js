@@ -33,6 +33,10 @@ function validarPerfil() {
         return;
     }
 
-    mensaje.textContent = "Acceso permitido";
-    // Más adelante: guardar los datos y pasar a juego.html
+    // Guardamos los datos para usarlos en la otra pantalla
+    sessionStorage.setItem("nombre", nombre);
+    sessionStorage.setItem("fecha", fecha);
+
+    // Cambiamos de pantalla
+    window.location.href = "juego.html";
 }

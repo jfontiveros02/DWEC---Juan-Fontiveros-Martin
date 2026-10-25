@@ -25,8 +25,8 @@ function validarPerfil() {
         return;
     }
 
-    // Edad aproximada (la afinamos en el commit de la edad)
-    const edad = hoy.getFullYear() - nacimiento.getFullYear();
+    // Edad exacta (funcion de utilidades.js)
+    const edad = calcularEdad(fecha);
 
     if (edad < EDAD_MINIMA) {
         mensaje.textContent = "Acceso denegado";

@@ -8,6 +8,7 @@ window.addEventListener("load", function () {
     }
 
     mostrarNombre(nombre);
+    mostrarDatosFecha(sessionStorage.getItem("fecha"));
 });
 
 function mostrarNombre(nombre) {
@@ -15,4 +16,14 @@ function mostrarNombre(nombre) {
     const formateado = nombre.charAt(0).toUpperCase() + nombre.slice(1).toLowerCase();
 
     document.getElementById("nombreJugador").textContent = "Jugador: " + formateado;
+}
+
+function mostrarDatosFecha(fecha) {
+    const edad = calcularEdad(fecha);
+    const nacimiento = new Date(fecha + "T00:00:00");
+
+    document.getElementById("edadJugador").textContent = "Edad: " + edad + " a\u00f1os";
+    // Metodo de Date: dia de la semana en que naciste
+    document.getElementById("cumpleJugador").textContent =
+        "Naciste un " + nacimiento.toLocaleDateString("es-ES", { weekday: "long" });
 }

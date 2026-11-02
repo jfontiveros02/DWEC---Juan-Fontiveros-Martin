@@ -1,0 +1,10 @@
+/* Borde del panel del jugador (los colores los pone estilos.js) */
+#panel {
+    border: 2px solid #333;
+}
+
+/* Mensaje de error en rojo (Acceso denegado) */
+#mensaje {
+    color: red;
+    font-weight: bold;
+}

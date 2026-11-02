@@ -7,6 +7,7 @@
     <script src="js/utilidades.js" defer></script>
     <script src="js/juego.js" defer></script>
     <script src="js/estilos.js" defer></script>
+    <script src="js/adivina.js" defer></script>
 </head>
 <body>
     <h1>Panel del jugador</h1>
@@ -15,6 +16,15 @@
         <p id="nombreJugador"></p>
         <p id="edadJugador"></p>
         <p id="cumpleJugador"></p>
+    </div>
+    <div id="juego">
+        <h2>Adivina el n&uacute;mero (1 a 10)</h2>
+        <input type="text" id="numero">
+        <button id="btnProbar">Probar</button>
+        <button id="btnNueva">Nueva partida</button>
+        <p id="pista"></p>
+        <p id="intentos">Intentos: 0</p>
+        <p id="puntos">Puntos: 0</p>
     </div>
 </body>
 </html>

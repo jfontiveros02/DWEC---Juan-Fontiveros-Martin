@@ -8,3 +8,8 @@
     color: red;
     font-weight: bold;
 }
+
+/* Separacion entre el panel y el juego */
+#juego {
+    margin-top: 20px;
+}

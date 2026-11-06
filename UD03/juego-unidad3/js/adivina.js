@@ -74,6 +74,9 @@ function probar() {
         pista.textContent = "\u00a1Acertaste! El n\u00famero era " + numeroSecreto;
         terminado = true;
 
+        // Guardamos la partida (funcion de almacenamiento.js)
+        guardarPartida();
+
     // FALLO
     } else {
 

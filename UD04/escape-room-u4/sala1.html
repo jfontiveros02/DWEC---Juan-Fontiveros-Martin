@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room - Sala 1</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <main class="sala">
+        <h2>Sala 1: La biblioteca</h2>
+        <p>La puerta está bloqueada por un cofre con una cerradura de <strong>3 dígitos</strong>.
+           Sobre el cofre hay una nota escrita a mano.</p>
+
+        <div class="objetos">
+            <button id="btnNota">Leer la nota</button>
+            <button id="btnExaminar">Examinar la habitación</button>
+        </div>
+
+        <div id="info"></div>
+
+        <label for="codigo">Código:</label>
+        <input type="text" id="codigo" maxlength="3" placeholder="___">
+        <button id="btnAbrir">Abrir cofre</button>
+
+        <p id="intentos"></p>
+        <p id="mensaje" class="mensaje"></p>
+
+        <footer>Autor: Juan Fontiveros</footer>
+    </main>
+
+    <script src="js/sala1.js"></script>
+</body>
+</html>

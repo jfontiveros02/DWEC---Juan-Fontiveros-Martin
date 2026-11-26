@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room - Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <main class="sala">
+        <h1>Escape Room</h1>
+        <p>Te has despertado encerrado en una vieja mansión. Para salir tendrás que
+           atravesar <strong>tres salas cerradas</strong> resolviendo sus enigmas.</p>
+        <button id="btnEmpezar">Empezar</button>
+        <footer>Autor: Juan Fontiveros · Desarrollo Web en Entorno Cliente · Unidad 4</footer>
+    </main>
+
+    <script>
+        document.getElementById("btnEmpezar").addEventListener("click", () => {
+            sessionStorage.clear(); // empezamos una partida nueva
+            window.location.href = "sala1.html";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* Autor: Juan Fontiveros */
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, serif;
+    background: #1d1a17;
+    color: #eee4d3;
+}
+
+.sala {
+    width: 90%;
+    max-width: 700px;
+    padding: 2rem;
+    background: #2c2621;
+    border: 2px solid #8a6d3b;
+    border-radius: 10px;
+}
+
+h1, h2 { color: #d9a441; }
+
+button {
+    margin: .3rem;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background: #8a6d3b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+button:hover { background: #a8854a; }
+button:disabled { background: #555; cursor: default; }
+
+input {
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #8a6d3b;
+}
+
+.mensaje { min-height: 1.5rem; font-weight: bold; }
+.error   { color: #ff7b7b; }
+.exito   { color: #8be38b; }
+
+.pista {
+    background: #3a322b;
+    border-left: 4px solid #d9a441;
+    padding: .5rem 1rem;
+    margin: .5rem 0;
+}
+
+.objetos { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; }
+
+footer { margin-top: 2rem; font-size: .8rem; color: #a99; }
